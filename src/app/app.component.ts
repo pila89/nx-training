@@ -1,10 +1,14 @@
+import { SrcAppAuthModule } from './auth/src/lib/src-app-auth.module';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { SrcAppFeaturesProductModule } from './features/product/src';
+import { SrcAppFeaturesUserModule } from './features/user/src';
+import { CartModule } from './features/cart/src';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [NxWelcomeComponent, RouterModule,SrcAppAuthModule,SrcAppFeaturesProductModule, SrcAppFeaturesUserModule,CartModule],
   selector: 'ecommerce-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

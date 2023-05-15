@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ecommerce/src/app/auth": ["src/app/auth/src/index.ts"],
+      "@ecommerce/src/app/features/cart": [
+        "src/app/features/cart/src/index.ts"
+      ],
+      "@ecommerce/src/app/features/product": [
+        "src/app/features/product/src/index.ts"
+      ],
+      "@ecommerce/src/app/features/user": ["src/app/features/user/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
